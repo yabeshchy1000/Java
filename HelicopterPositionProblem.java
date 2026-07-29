@@ -22,6 +22,6 @@ public class HelicopterPositionProblem {
         } else {
             System.out.println("Helicopter is inside the circle");
         }
-        input.close();
+        input.close();      // due to resource leak
     }
 }
