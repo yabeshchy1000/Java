@@ -3,7 +3,7 @@ public class SumOfInitialFourPrime {
         int count=0, sum=0;
         for (int i=2; i <= 100 && count < 4; i++) {
             boolean isPrime = true;
-            for (int j=2; j<i; j++) {
+            for (int j=2; j <= i/2; j++) {   //better condition j*j <= i 
                 if (i%j == 0) {
                     isPrime = false;
                     break;
